@@ -60,13 +60,14 @@ a:focus {
 .light {
     font-weight: 400;
 }
-
+/* This is for the navbar that shows up on mobile when @media isn't working for desktop
+*/
 .navbar-custom {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #000;
+    background-color: #F8F8F8;
 }
 
 .navbar-custom .navbar-brand {
@@ -87,7 +88,8 @@ a:focus {
 .navbar-custom .navbar-brand .navbar-toggle:active {
     outline: 0;
 }
-
+/*this is for the color of the text
+*/
 .navbar-custom a {
     color: #000;
 }
@@ -115,7 +117,7 @@ a:focus {
         padding: 20px 0;
         border-bottom: 0;
         letter-spacing: 1px;
-        background: 0 0;
+        background: transparent;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -128,6 +130,10 @@ a:focus {
 
     .navbar-custom.top-nav-collapse {
         border-bottom: 1px solid rgba(255,255,255,.3);
+    }
+
+    .navbar-custom.top-nav-collapse .navbar-brand {
+      font-size: 0.85em;
     }
 }
 
